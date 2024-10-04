@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body>
+    <h1>Question 1</h1>
+    <form id="question1Form">
+        <p>What is the capital of France?</p>
+        <label><input type="radio" name="q" value="Paris"> Paris</label><br>
+        <label><input type="radio" name="q" value="London"> London</label><br>
+        <label><input type="radio" name="q" value="Berlin"> Berlin</label><br>
+        <label><input type="radio" name="q" value="Madrid"> Madrid</label><br>
+        <button type="button" onclick="submitAnswer('question1Form', 'Paris', 'question2.html')">Next</button>
+    </form>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
