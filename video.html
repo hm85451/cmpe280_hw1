@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question-container {
+            width: 1200px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+        .question-title {
+            font-weight: bold;
+        }
+        .video-section {
+            margin-left: 20px;
+        }
+        .answers-container {
+            margin: 20px 0;
+        }
+        .answer {
+            margin-bottom: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        iframe {
+            width: 320px;
+            height: 180px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="question-container">
+    <div class="question-content">
+        <div class="question-title">Question 4</div>
+        <p>Watch the video and answer the following question. What is the source as mentioned in the video?</p>
+
+        <form id="audioForm">
+            <div class="answers-container">
+                <div class="answer">
+                    <input type="radio" id="nasa" name="answer" value="nasa">
+                    <label for="nasa">NASA.Gov</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" id="data" name="answer" value="data">
+                    <label for="data">Data.Gov</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" id="facebook" name="answer" value="facebook">
+                    <label for="facebook">Facebook</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" id="xyz" name="answer" value="xyz">
+                    <label for="xyz">XYZ.net</label>
+                </div>
+            </div>
+
+            <div class="buttons"> 
+                <button type="submit" onclick="submitAnswer(4, event, 'result.html')">Submit & Next Question</button>
+                <button type="reset">Cancel & Clear Selection</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="video-section">
+        <video width="480" height="360" controls>
+            <source src="https://youtu.sbe/WeA7edXsU40?si=J_6uOS8hg2Hda31z" >
+        </video>
+    </div>
+</div>
+
+</body>
+</html>
+
+<script src="quiz.js"></script>

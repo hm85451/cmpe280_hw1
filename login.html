@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            width: 400px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-title {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .input-container {
+            margin-bottom: 20px;
+        }
+        .input-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        .buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .button-submit {
+            color: black;
+            border: none;
+        }
+        .button-cancel {
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="login-title">Login</div>
+
+    <form id="loginForm">
+        <div class="input-container">
+            <label for="username" class="input-label">Username</label>
+            <input type="text" id="username" class="input-field" name="username" required>
+        </div>
+
+        <div class="input-container">
+            <label for="password" class="input-label">Password</label>
+            <input type="password" id="password" class="input-field" name="password" required>
+        </div>
+
+        <div class="buttons">
+            <button class="button-submit">Login</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+
+<script src="quiz.js"></script>

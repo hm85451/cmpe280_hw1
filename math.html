@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question-container {
+            width: 900px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: bold;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .answers-container {
+            margin: 20px 0;
+        }
+        .answer {
+            margin-bottom: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="question-container">
+    <div class="question-title">Question 1</div>
+    <p>Given points (x<sub>1</sub>, y<sub>1</sub>) and (x<sub>2</sub>, y<sub>2</sub>), select the formula to find the equation of the given line:</p>
+
+    <form id="mathForm">
+        <div class="answers-container">
+            <div class="answer">
+                <input type="radio" id="answer1" name="answer" value="y=mx+b">
+                <label for="answer1">y = mx + b</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="answer2" name="answer" value="circle-equation">
+                <label for="answer2">(x - h)<sup>2</sup> + (y - k)<sup>2</sup> = r<sup>2</sup></label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="answer3" name="answer" value="point-slope">
+                <label for="answer3">y - y<sub>1</sub> = m(x - x<sub>1</sub>)</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="answer4" name="answer" value="two-point">
+                <label for="answer4">y - y<sub>2</sub> = (y<sub>2</sub> - y<sub>1</sub>) / (x<sub>2</sub> - x<sub>1</sub>)(x - x<sub>2</sub>)</label>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" onclick="submitAnswer(1, event,'cosine.html')">Submit & Next Question</button>
+            <button type="reset">Cancel & Clear Selection</button>
+        </div>
+    </form>
+
+    <div class="image-container">
+        <img src="./asset/image1.jpg" alt="Line graph showing points (x1, y1) and (x2, y2)" width="400">
+    </div>
+
+</div>
+
+</body>
+</html>
+
+<script src="quiz.js"></script>

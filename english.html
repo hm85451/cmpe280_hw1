@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question-container {
+            width: 700px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: bold;
+        }
+        .snippet {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        .answers-container {
+            margin: 20px 0;
+        }
+        .answer {
+            margin-bottom: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="question-container">
+    <div class="question-title">Question 3</div>
+    <p>As per the latest Twitter news, complete the article snippet given by selecting appropriate choices for the blanks:</p>
+
+
+    <div class="snippet">
+        <p>
+            Twitter wants more cash. The company announced two 
+            <span class="highlight">$_____ million</span> debt offerings in a filing today, 
+            each with a potential <span class="highlight">$100 increase</span> provided that the sales are oversubscribed. Assuming full tip, including the 
+            <span class="highlight">$100 million boosters</span>, will raise up to $1.5 billion with the two offerings.
+        </p>
+        <p>Source: <a href="https://techcrunch.com/2014/09/10/twitter-to-raise-up-to-1-5b-in-debt-offering/" target="_blank">Twitter to raise up to $1.5B in debt offering</a></p>
+    </div>
+
+    <form id="englishForm">
+        <div class="answers-container">
+            <div class="answer">
+                <input type="radio" id="answer1" name="answer1" value="option1">
+                <label for="answer1">Option 1 Mark 1: $650</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="answer2" name="answer1" value="option2">
+                <label for="answer2">Option 2 Mark 1: $550</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="answer3" name="answer1" value="option3">
+                <label for="answer3">Option 3 Mark 1: $650</label>
+            </div>
+        </div>
+
+        <div class="answers-container">
+            <div class="answer">
+                <input type="radio" id="answer4" name="answer2" value="twitter">
+                <label for="answer4">Option 1 Mark 2: Twitter</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="answer5" name="answer2" value="google">
+                <label for="answer5">Option 1 Mark 2: Google</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="answer6" name="answer2" value="facebook">
+                <label for="answer6">Option 1 Mark 2: Facebook</label>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button onclick="submitAnswer(3, event, 'video.html')">Submit & Next Question</button>
+            <button type="reset">Cancel & Clear Selection</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+
+<script src="quiz.js"></script>
